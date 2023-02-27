@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport">
+		<title>Cat Ears 4U - Home Page</title>
+		<link href="styles.css" rel="stylesheet">
+		<script src="Shopping Cart.js"></script>
+		<link rel="icon" href="/iconforweb.ico?v=2">
+
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<nav id="test-nav">
+					<a id="user-name" href="#">Welcome, (username)!</a> 
+					<div class = "lang-menu">
+						<div class="selected-lang">
+							Русский
+						</div>
+						<ul>
+							<li>
+								<a href ="Home Page.html" id="en">Английский</a>
+							</li>
+							<li>
+								<a href ="#" class="es">Испанский</a>
+							</li>
+							<li>
+								<a href ="Home Page-de.html" class="de">Немецкий</a>
+							</li>
+							<li>
+								<a href ="Home Page-ru.html" class="ru">Русский</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#"><img title="favorites" src="imgs/icons/favorites.png" alt="favorites" height="30vh"></a> 
+					<a href="Shopping Cart.html">
+						<button class="button cartbutton" style="overflow: hidden;">
+							<img title="shopping cart" src="imgs/icons/cart.png" width="30" height="30" alt="Shopping Cart; see all items in your cart">
+							&nbsp;Мурзина&nbsp;
+						</button>
+					</a> 
+				</nav>
+				<!-- pink section -->
+				<nav id="nav2">
+					<nav1>
+						<a href="Home Page.html">
+						<img src="imgs/logos/4Ulogos-01.png" alt="cat ears 4u logo" height="55vh">
+						</a>
+					</nav1>
+					<nav class = "section-nav">
+						<a href="Men's Apparel.html">МУЖСКОЕ</a> 
+						<a href="Women's Apparel.html">ЖЕНСКОЕ</a> 
+						<a href="Kids' Apparel.html">ДЛЯ ДЕТЕЙ</a> 
+						<a href="Accessories.html">АККСЕСУАРЫ</a> 
+						<a href="Specials.html">ОСОБОЕ</a> 
+					</nav>
+					<div class="search-bar">
+						<img src="imgs/icons/search.png" alt="cat ears 4u logo" height="20vh">
+						
+						<input type="search" name="search" placeholder="Поиск..." autocapitalize="off" autocomplete="off" spellcheck="false">
+					</div>
+				</nav>
+			</header>
+		</div>
+		
+		<section id="promotion-page">
+			<div id="welcome-section">
+				<div id="welcome-box">
+					<img class="welcome-image" src="imgs/misc/catears4ulanding2.gif" alt="3d pixel art logo"/>
+				</div>
+			</div>
+			<div id="promotion-section">
+				<div id="promotion">
+					<div class="promo-item">
+						<img id="promo-image" src="imgs/merchandise/Nyan Cat Headphones.jpg" alt="product_image"> 
+					</div>
+					<div class="promo-text"> 
+						<h1>Наушники CAT EAR 4U!<br>Закажи сейчас и получи скидку в <span class="pink-text">40%</span></h1>
+						<button class="button promo-button" style="height: 30px; width: 100"><b>&nbsp; Купить&nbsp;сейчас!</b></button>
+					</div>
+				</div> 
+			</div>
+		</section>
+		
+		<!--<section id="Featured">
+			<h2>Featured</h2>
+		</section>-->
+		
+		<h2>Специальные Предложения</h2>
+		<section id="specials">
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cat Hoodie.jpg" alt="clothing"> <br>
+				Толстовка &quot;I&apos;m a cat.&quot; <strong>$19.99</strong>
+			  <button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cat Lady Shirt (W).jpg" alt="clothing"> <br>
+				Майка &quot;Cat Lady&quot;<strong>$14.99</strong>
+			  <button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cute Cat T-Shirt.jpg" alt="clothing"> <br>
+				Майка &quot;Easily Distracted By Cats&quot; <strong>$14.99</strong>
+			  <button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Christmas Cat Sweater.png" alt="clothing"> <br>
+				Кофта &quot;Christmas Cat&quot; <strong>$14.99</strong>
+			  <button class ="add2cart" onClick="addToCart()">Добавить в корзину</button>
+			</div>
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Pink Cat Hat.jpg" alt="clothing"> <br>
+				Кепка &quot;Sir Catsworth Hat&quot; - Розовая <strong>$9.99</strong>
+			  <button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Navy Blue Cat Hat.jpg" alt="clothing"> <br>
+				Sir Catsworth Hat - Navy Blue <strong>$9.99</strong>
+			  <button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+		</section>
+		<br><br><br>
+		</section>
+
+		
+		<!--TODO: Add content to footer -->
+		<footer>
+			<a href="#">Terms&nbsp;&amp;&nbsp;Conditions</a>
+			<a href="#">Privacy&nbsp;Policy</a>
+			<a href="#">Cookie&nbsp;Policy</a>
+			<a href="#">Contact&nbsp;Us</a>
+			<a href="#">FAQs</a>
+			<a href="#">Help</a>
+		</footer>
+
+	</body>
+</html>

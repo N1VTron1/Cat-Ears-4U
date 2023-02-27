@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cat Ears 4U - Checkout</title>
+		<link href="styles.css" rel="stylesheet">
+		<script src="Shopping Cart.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="test-nav"> <a href="#">NYAN! CAT EARS 4U</a> <a href="#">MEN</a> <a href="#">WOMEN</a> <a href="#">KIDS</a> <a href="#">ACCESSORIES</a> <a href="#">SPECIALS</a> <a href="#">Welcome, (username)!</a> <a href="#"><img src="imgs/icons/UK Flag.png" width="60" height="40" alt="flag"></a> <a href="#"><img alt="favorites"></a> <a href="#"><img alt="shopping cart"></a> <span class="search-bar">Search <button><img alt="search-bar-icon"></button></span></nav>
+		</header>
+		<div class="colomn main">
+			<div class="block block-account-info">
+				<div class="block-title">
+						<h2>Check Out</h2>	
+						<table>
+							<thead>
+								<th>Order#</th>
+								<th>Item</th>
+								<th>Description</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Subtotal</th>
+								<th>Order Total</th>
+								<th></th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><img src="imgs/merchandise/Cat Hoodie.jpg" width="150" height="200" alt="item-photo"> <br>&quot;I&apos;m a cat.&quot; Hoodie</td>
+									<td>Women's &quot;I&apos;m a cat.&quot; Hoodie <br> Color: Black <br> Serial Number: 7139000</td>
+									<td>$14.99</td>
+									<td>1</td>
+									<td>$14.99</td>
+									<td>1014.89</td>
+									<td><button><img src="imgs/icons/Trash Can.png" width="30" height="30" alt="delete-item" onClick="deleteFromCheckout()"></button></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><img src="imgs/merchandise/Nyan Cat Headphones Blue.jpg" width="200" height="200" alt="item-photo"> <br>&quot;I&apos;m a cat.&quot; Hoodie</td>
+									<td> Catphones <br> Color: Blue <br> Serial Number: 8675309</td>
+									<td>$99.99</td>
+									<td>10</td>
+									<td>$999.90</td>
+									<td><button><img src="imgs/icons/Trash Can.png" width="30" height="30" alt="delete-item" onClick="deleteFromCheckout()"></button></td>	
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		<button onClick="purchaseItems()">CLICK TO PURCHASE</button>
+		<footer class="footer-full">
+			<a href="#">Terms &amp; Conditions</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Cookie Policy</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Contact Us</a>
+			<a href="#">FAQs</a>
+			<a href="#">Help</a>
+		</footer>
+	</body>
+</html>

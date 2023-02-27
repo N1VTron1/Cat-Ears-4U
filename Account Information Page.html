@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Account Information</title>
+		<link href="styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div>
+			<header>				
+				<nav id="test-nav">
+					<a id="user-name" href="#"></a> 
+					<div class = "lang-menu">
+						<div class="selected-lang">
+							English
+						</div>
+						<ul>
+							<li>
+								<a href ="#" id="en" style="color: black;">English</a>
+							</li>
+							<li>
+								<a href ="#" class="es" style="color: black;">Spanish</a>
+							</li>
+							<li>
+								<a href ="#" class="de" style="color: black;">German</a>
+							</li>
+							<li>
+								<a href ="Home Page-ru.html" class="ru" style="color: black;">Russian</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#"><img title="favorites" src="imgs/icons/favorites.png" alt="favorites" height="30vh"></a> 
+					<a href="Shopping Cart.html">
+						<button class="button cartbutton" style="overflow: hidden;">
+							<img title="shopping cart" src="imgs/icons/cart.png" width="30" height="30" alt="Shopping Cart; see all items in your cart">
+							&nbsp;SHOPPING&nbsp;CART
+						</button>
+					</a> 
+				</nav>
+				<!-- pink section -->
+				<nav id="nav2">
+					<nav1>
+						<a href="Home Page.html">
+						<img src="imgs/logos/4Ulogos-01.png" alt="cat ears 4u logo" height="55vh">
+						</a>
+					</nav1>
+					<nav class = "section-nav">
+						<a href="Men's Apparel.html">MEN</a> 
+						<a href="Women's Apparel.html">WOMEN</a> 
+						<a href="Kids' Apparel.html">KIDS</a> 
+						<a href="Accessories.html">ACCESSORIES</a> 
+						<a href="Specials.html">SPECIALS</a> 
+					</nav>
+					<div class="search-bar">
+						<img src="imgs/icons/search.png" alt="cat ears 4u logo" height="20vh">
+						
+						<input type="search" name="search" placeholder="find something.." autocapitalize="off" autocomplete="off" spellcheck="false">
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<section class="page-content">
+			<div class="sidebar sidebar-main">
+				<div id="sidebar-navigation" class="content block-collapsible-nav.content">
+						<ul class="nav items">
+							<li class ="nav item"><a href="Account Overview Page.html">Account Overview</a></li>
+							<li class ="nav item"><span class="delimiter"></span></li>
+							<li class="nav item current"><strong>Account Information</strong></li>
+							<li class="nav item"><a href="Address Book Page.html">Address Book</a></li>
+							<li class ="nav item"><span class="delimiter"></span></li>
+							<li class="nav item"><a href="Orders Page.html">Orders</a></li>
+							<li class="nav item"><a href="Payment Methods Page.html">Payment Methods</a></li>
+						</ul>
+					</div>
+				
+				<nav class="block block-collapsible-nav">
+					<h2 class="heading">
+						<button type="button" class="title block-collapsible-nav-title form-button" aria-controls="ff6916871e5319ab26e2247d4f483255" aria-expanded="true">Account Overview</button>
+					</h2>
+					
+				</nav>
+			</div>
+
+			<form class="form form-edit-account" action="#" method="post" id="form-validate" enctype="multipart/form-data" data-hasrequired="* Required Fields" autocomplete="off" novalidate="novalidate">
+				
+				<fieldset class="fieldset info">
+					<input name="form_key" type="hidden" value="PyF5q9DhaPQ2jcy4">        <legend class="legend"><span>Account Information</span></legend><br>
+					
+					<div class="field field-name-firstname required">
+						<label class="label" for="firstname"><span>First Name</span></label>
+						<div class="control">
+							<input type="text" id="firstname" name="firstname" placeholder="-----" title="First Name" class="input-text required-entry custom-validate-alphanum" data-validate="{required:true}" aria-required="true">
+						</div>
+					</div>
+						<div class="field field-name-lastname required">
+						<label class="label" for="lastname"><span>Last Name</span></label>
+						<div class="control">
+							<input type="text" id="lastname" name="lastname" placeholder="-----" title="Last Name" class="input-text required-entry custom-validate-alphanum" data-validate="{required:true}" aria-required="true">
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="actions-toolbar">
+					<div class="primary">
+						<button type="submit" class="action save primary form-button" title="Save"><span>Apply Changes</span></button>
+					</div>
+					
+					<div class="secondary">
+						<a class="action back" href="Account Overview Page.html"><span>Back</span></a>
+					</div>
+				</div>
+			</form>
+		</section>	
+		<br><br><br><br><br>
+		
+		<footer>
+			<a href="#">Terms&nbsp;&amp;&nbsp;Conditions</a>
+			<a href="#">Privacy&nbsp;Policy</a>
+			<a href="#">Cookie&nbsp;Policy</a>
+			<a href="#">Contact&nbsp;Us</a>
+			<a href="#">FAQs</a>
+			<a href="#">Help</a>
+		</footer>
+
+	</body>
+</html>

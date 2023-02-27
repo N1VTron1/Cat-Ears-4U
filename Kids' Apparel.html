@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Kids&apos; Apparel</title>
+		<link href="styles.css" rel="stylesheet">
+		<script src="Shopping Cart.js"></script>
+		<script src="User-info.js"></script>
+		<link rel="icon" href="/iconforweb.ico?v=2">
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<nav id="test-nav">
+					 
+					<!--<a href="Home Page.html">NYAN! CAT EARS 4U</a> -->
+					
+					<a id="user-name" href="#"></a> 
+					<div class = "lang-menu">
+						<div class="selected-lang">
+							English
+						</div>
+						<ul>
+							<li>
+								<a href ="#" id="en" style="color: black;">English</a>
+							</li>
+							<li>
+								<a href ="#" class="es" style="color: black;">Spanish</a>
+							</li>
+							<li>
+								<a href ="#" class="de" style="color: black;">German</a>
+							</li>
+							<li>
+								<a href ="Home Page-ru.html" class="ru" style="color: black;">Russian</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#"><img title="favorites" src="imgs/icons/favorites.png" alt="favorites" height="30vh"></a> 
+					<a href="Shopping Cart.html">
+						<button class="button cartbutton" style="overflow: hidden;">
+							<img title="shopping cart" src="imgs/icons/cart.png" width="30" height="30" alt="Shopping Cart; see all items in your cart">
+							&nbsp;SHOPPING&nbsp;CART
+						</button>
+					</a> 
+				</nav>
+				<!-- pink section -->
+				<nav id="nav2">
+					<nav1>
+						<a href="Home Page.html">
+						<img src="imgs/logos/4Ulogos-01.png" alt="cat ears 4u logo" height="55vh">
+						</a>
+					</nav1>
+					<nav class = "section-nav">
+						<a href="Men's Apparel.html">MEN</a> 
+						<a href="Women's Apparel.html">WOMEN</a> 
+						<a href="Kids' Apparel.html">KIDS</a> 
+						<a href="Accessories.html">ACCESSORIES</a> 
+						<a href="Specials.html">SPECIALS</a> 
+					</nav>
+					<div class="search-bar">
+						<img src="imgs/icons/search.png" alt="cat ears 4u logo" height="20vh">
+						<input type="text" id="search" name="search" placeholder="find something..">
+					</div>
+				</nav>
+			</header>
+		</div>
+		
+		<h2>Kids</h2>
+		
+		<section class="page-content">
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cat Hoodie.jpg" alt="product-item"><br>
+				Cat Hoodie <b>$9.99</b>
+				<button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Kitty Kat Pajamas.jpg" alt="product-item"> <br>
+				Kitty Kat Pajamas <b>$9.99</b>
+				<button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cute Cat Skirt.jpg" alt="product-item"> <br>
+				Cute Cat Skirt <b>$9.99</b>
+				<button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cute White Kitty.jpg" alt="product-item"><br>
+				Cute White Kitty <b>$9.99</b>
+				<button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cool Cat T-Shirt.jpg" alt="product-item"><br>
+				Cool Cat T-Shirt <b>$9.99</b>
+				<button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Bubble Gum Cat.jpg" alt="product-item"> <br>
+				Bubble Gum Cat T-Shirt <b>$9.99</b>
+				<button class ="add2cart" onClick="addToCart()">add 2 cart</button>
+			</div>
+		</section> 
+		<br><br><br>
+	
+		
+		<footer>
+			<a href="#">Terms&nbsp;&amp;&nbsp;Conditions</a>
+			<a href="#">Privacy&nbsp;Policy</a>
+			<a href="#">Cookie&nbsp;Policy</a>
+			<a href="#">Contact&nbsp;Us</a>
+			<a href="#">FAQs</a>
+			<a href="#">Help</a>
+		</footer>
+	</body>
+</html>

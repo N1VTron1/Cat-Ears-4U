@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"> 
+		<title>Sample Product Page</title>
+		<link href="styles.css" rel="stylesheet">
+
+		<script src="Shopping Cart.js"></script>
+		<link rel="icon" href="/iconforweb.ico?v=2">
+	</head>
+
+	<body>
+		<nav id="test-nav">
+			<a href="#">Welcome, (username)!</a> 
+			<a href="#" alt="change language">
+				<img title="language" src="imgs/icons/UK Flag.png" height="20vh" alt="flag">
+			</a> 
+			<a href="#"><img title="favorites" src="imgs/icons/favorites.png" alt="favorites" height="30vh"></a> 
+			<a href="Shopping Cart.html">
+				<button class="button cartbutton" style="overflow: hidden;">
+					<img title="shopping cart" src="imgs/icons/cart.png" width="30" height="30" alt="Shopping Cart; see all items in your cart">
+					&nbsp;SHOPPING&nbsp;CART
+				</button>
+			</a> 
+		</nav>
+		<!-- pink section -->
+		<nav id="nav2">
+			<nav1>
+				<a href="Home Page.html">
+				<img src="imgs/logos/4Ulogos-01.png" alt="cat ears 4u logo" height="55vh">
+				</a>
+			</nav1>
+			<nav>
+				<a href="Men's Apparel.html">MEN</a> 
+				<a href="Women's Apparel.html">WOMEN</a> 
+				<a href="Kids' Apparel.html">KIDS</a> 
+				<a href="Accessories.html">ACCESSORIES</a> 
+				<a href="Specials.html">SPECIALS</a> 
+			</nav>
+			<div class="search-bar">
+				<img src="imgs/icons/search.png" alt="cat ears 4u logo" height="20vh">
+				<input type="text" id="search" name="search" placeholder="find something..">
+			</div>
+		</nav>
+		
+		<section id="product-section">
+			<div id="product-side">
+				<div id="product-label"><b>Cat Ears 4U Official Hoodie</b></div>
+				<div id="product">
+					<img id="product-image" src="imgs/merchandise/logo hoodie.png" alt="">
+				</div>
+			</div>
+			<div id="product-details">
+				<span class="bigtext">$55</span>
+				<b>size</b>
+				<div id="buttonrow">
+					<label><input type="radio" name="size"><div class="sizebutton" name="size">s</div></label>
+					<label><input type="radio" name="size"><div class="sizebutton">m</div></label>
+					<label><input type="radio" name="size"><div class="sizebutton">l</div></label>
+					<label><input type="radio" name="size"><div class="sizebutton">xl</div></label>
+					<label><input type="radio" name="size" disabled="true"><div class="sizebutton">xxl</div></label>
+				</div>
+				<br>
+				<button class ="add2cartbig" onClick="addToCart()">add 2 cart</button>
+				<b>color</b>
+				<select name="color" id="select-attr">
+					<option value="black">black</option>
+					<option value="white">white</option>
+				</select>
+				<hr width="100%">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</div>
+		</section>
+		<br><br><br>
+		
+		<footer>
+			<a href="#">Terms&nbsp;&amp;&nbsp;Conditions</a>
+			<a href="#">Privacy&nbsp;Policy</a>
+			<a href="#">Cookie&nbsp;Policy</a>
+			<a href="#">Contact&nbsp;Us</a>
+			<a href="#">FAQs</a>
+			<a href="#">Help</a>
+		</footer>
+	</body>
+</html>

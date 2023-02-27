@@ -1,0 +1,71 @@
+{
+	"products" : 
+	[
+		{
+			"Product_ID" : 1, 
+			"Product_Name" : "\"I'm a Cat.\" hoodie",
+			"Product_Description" : "Soft, fuzzy and comfortable \"I'm a Cat.\" hoodie",
+			"Product_Category" : "Hoodie/Sweater",
+			"Weight" : 10,
+			"Dimensions" : "",
+			"Price" : 14.99,
+			"Quantity" : "",
+			"Product_Image" : "imgs/merchandise/Cat Hoodie.jpg"
+		},
+		{
+			"Product_ID" : 2, 
+			"Product_Name" : "\"All I Care About Is My Cat...\" Hoodie",
+			"Product_Description" : "\"All I Care About Is My Cat and like... maybe three people\" hoodie for men",
+			"Product_Category" : "Hoodie/Sweater",
+			"Weight" : 15,
+			"Dimensions" : "",
+			"Price" : 14.99,
+			"Quantity" : "",
+			"Product_Image" : "imgs/merchandise/Cat Hoodie 2.jpg"
+		},
+		{
+			"Product_ID" : 3, 
+			"Product_Name" : "Cathulu Sweater",
+			"Product_Description" : "Spooky Cathulu sweater with tentacles spawning across itself",
+			"Product_Category" : "Hoodie/Sweater",
+			"Weight" : 10,
+			"Dimensions" : "",
+			"Price" : 14.99,
+			"Quantity" : "",
+			"Product_Image" : "imgs/merchandise/Cthulu Cat Sweater.jpg"
+		},
+		{
+			"Product_ID" : 4, 
+			"Product_Name" : "American Purrtriot Shirt",
+			"Product_Description" : "Show your purride with this cute symbolic cat shirt",
+			"Product_Category" : "Shirt",
+			"Weight" : 10,
+			"Dimensions" : "",
+			"Price" : 9.99,
+			"Quantity" : "",
+			"Product_Image" : "imgs/merchandise/American Cat.jpg"
+		},
+		{
+			"Product_ID" : 10, 
+			"Product_Name" : "Cat Ears 4U Official Hoodie",
+			"Product_Description" : "The Offical 4U Hoodie. High quality design with cathartic comfort",
+			"Product_Category" : "Hoodie/Sweater",
+			"Weight" : 10,
+			"Dimensions" : "",
+			"Price" : 49.99,
+			"Quantity" : "",
+			"Product_Image" : "imgs/merchandise/logo hoodie.png"
+		},
+		{
+			"Product_ID" : 13, 
+			"Product_Name" : "Furry Cat Ears",
+			"Product_Description" : "Fluffy and furry cat ears for some proper feline comfort",
+			"Product_Category" : "Accessory",
+			"Weight" : 0.5,
+			"Dimensions" : "",
+			"Price" : 4.99,
+			"Quantity" : "",
+			"Product_Image" : "imgs/merchandise/Furry Cat Ears.jpg"
+		}
+	]
+}

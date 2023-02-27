@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Specials</title>
+		<link href="styles.css" rel="stylesheet">
+		
+		<script src="Shopping Cart.js"></script>
+		<link rel="icon" href="/iconforweb.ico?v=2">
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<nav id="test-nav">
+					 
+					<!--<a href="Home Page.html">NYAN! CAT EARS 4U</a> -->
+					
+					<a href="#">(Имя пользователя)</a> 
+					<div class = "lang-menu">
+						<div class="selected-lang">
+							Русский
+						</div>
+						<ul>
+							<li>
+								<a href ="#" id="en" style="color: black;">English</a>
+							</li>
+							<li>
+								<a href ="#" class="es" style="color: black;">Spanish</a>
+							</li>
+							<li>
+								<a href ="#" class="de" style="color: black;">German</a>
+							</li>
+							<li>
+								<a href ="Home Page-ru.html" class="ru" style="color: black;">Russian</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#"><img title="favorites" src="imgs/icons/favorites.png" alt="favorites" height="30vh"></a> 
+					<a href="Shopping Cart-ru.html">
+						<button class="button cartbutton" style="overflow: hidden;">
+							<img title="shopping cart" src="imgs/icons/cart.png" width="30" height="30" alt="Shopping Cart; see all items in your cart">
+							&nbsp;Мурзина&nbsp;
+						</button>
+					</a> 
+				</nav>
+				<!-- pink section -->
+				<nav id="nav2">
+					<nav1>
+						<a href="Home Page-ru.html">
+						<img src="imgs/logos/4Ulogos-01.png" alt="cat ears 4u logo" height="55vh">
+						</a>
+					</nav1>
+					<nav class = "section-nav">
+						<a href="Men's Apparel-ru.html">МУЖСКОЕ</a> 
+						<a href="Women's Apparel-ru.html">ЖЕНСКОЕ</a> 
+						<a href="Kids' Apparel-ru.html">ДЛЯ ДЕТЕЙ</a> 
+						<a href="Accessories-ru.html">АККСЕСУАРЫ</a> 
+						<a href="#">ОСОБОЕ</a> 
+					</nav>
+					<div class="search-bar">
+						<img src="imgs/icons/search.png" alt="cat ears 4u logo" height="20vh">
+						<input type="text" id="search" name="search" placeholder="Поиск...">
+					</div>
+				</nav>
+			</header>
+		</div>
+		
+		<h2>Особое</h2>
+		<section class="page-content">
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/logo hoodie.png" alt="product-item" onClick="location.href='Product Page.html';"> <br>
+				<p onClick="location.href='Product Page.html';"> Официальная Толстовка &quot;Cat Ears 4U&quot;<b>$11.99</b> <span class="strikethrough">$19.99</span></p>
+				<button class ="add2cart" onClick="addToCart()">Добавить в мурзину</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Happy Cat Sock Bundle.jpg" alt="product-item"> <br>
+				Набор &quot;Happy Cat Sock&quot;<b>$9.59</b> <span class="strikethrough">$15.99</span>
+				<button class ="add2cart" onClick="addToCart()">Добавить в мурзину</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cat Shaped Sunglasses.jpg" alt="product-item"> <br>
+				Солнцезащитные очки в форме кошки <b>$5.99</b> <span class="strikethrough">$9.99</span>
+				<button class ="add2cart" onClick="addToCart()">Добавить в мурзину</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Silver Sequin Cat Ears.jpg" alt="product-item"> <br>
+				Ушки &quot;Silver Sequin&quot;<b>$3.59</b> <span class="strikethrough">$5.99</span>
+				<button class ="add2cart" onClick="addToCart()">Добавить в мурзину</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Furry Cat Ears.jpg" alt="product-item"> <br>
+				Пушистые кошачьи ушки <b>$4.79</b> <span class="strikethrough">$7.99</span>
+				<button class ="add2cart" onClick="addToCart()">Добавить в мурзину</button>
+			</div>
+
+			<div class="item">
+				<img class="item-image" src="imgs/merchandise/Cotton Candy Cat Ear Headphones.jpg" alt="product-item"> <br> 
+				Наушники &quot;Cotton Candy Cat&quot; <b>$149.99</b> <span class="strikethrough">$249.99</span>
+				<button class ="add2cart" onClick="addToCart()">Добавить в мурзину</button>
+			</div>
+		</section>
+		<br><br><br>
+		
+		<footer>
+			<a href="#">Условия&nbsp;и&nbsp;Соглашения</a>
+			<a href="#">Политика&nbsp;конфиденциальности</a>
+			<a href="#">Политика&nbsp;использования&nbsp;cookie-файлов</a> 
+			<a href="#">Свяжитесь&nbsp;с&nbsp;нами</a>
+			<a href="#">FAQs</a>
+			<a href="#">Помощь</a>
+		</footer>
+	</body>
+</html>

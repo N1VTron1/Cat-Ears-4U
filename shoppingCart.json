@@ -1,0 +1,18 @@
+{
+	"items": [
+		{
+			"ImageHref": "imgs/merchandise/Cat Hoodie.jpg",
+			"ItemName": "&quot;I&apos;m a cat.&quot; Hoodie",
+			"Description": "Soft, fuzzy and comfortable &quot;I&apos;m a cat.&quot; hoodie for men.",
+			"Quantity": 2,
+			"Price": "20.99"
+		},
+		{
+			"ImageHref": "imgs/merchandise/Christmas Cat Sweater.png",
+			"ItemName": "Christmas Cat Sweatshirt",
+			"Description": "Christmas Cat Sweater great for curling up by a fire on a starry holiday.",
+			"Quantity": 1,
+			"Price": "14.99"
+		}
+	]
+}

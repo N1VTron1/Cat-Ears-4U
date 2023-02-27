@@ -1,0 +1,82 @@
+CREATE TABLE Products(
+	Product_ID INT GENERATED ALWAYS AS IDENTITY,
+	Product_Name VARCHAR(50) NOT NULL,
+	Product_Description VARCHAR(300) NOT NULL,
+	Product_Category VARCHAR(50) NOT NULL,
+	Weight FLOAT(2) NOT NULL,
+	Size VARCHAR(20) NOT NULL,
+	Price MONEY NOT NULL,
+	Quantity INT NOT NULL,
+	--e.g., imgs/product.jpg
+	Product_Image TEXT NOT NULL DEFAULT 'imgs/product.jpg',
+	PRIMARY KEY (Product_ID)
+);
+
+CREATE TABLE Customers(
+	Customer_ID INT GENERATED ALWAYS AS IDENTITY,
+	First_Name VARCHAR(50) NOT NULL,
+	Middle_Initial VARCHAR(1),
+	Last_Name VARCHAR(50) NOT NULL,
+	Suffix VARCHAR(5),
+	Username VARCHAR(30) NOT NULL, 
+	Customer_Password VARCHAR(30) NOT NULL,
+	Email VARCHAR(100) NOT NULL,
+	Phone_Number VARCHAR(20) NOT NULL,
+	Street_Address VARCHAR(50) NOT NULL,
+	Apartment_Number INT,
+	City VARCHAR(30) NOT NULL,
+	State_or_Province VARCHAR(30) NOT NULL,
+	ZIP_Code INT NOT NULL,
+	Country VARCHAR(30),
+	PRIMARY KEY (Customer_ID)
+);
+ 
+CREATE TABLE Orders(
+   	Order_ID INT GENERATED ALWAYS AS IDENTITY,
+   	Customer_ID INT NOT NULL,
+  	Cart_ID INT NOT NULL,
+  	Order_Date DATE NOT NULL,
+   	PRIMARY KEY (Order_ID),
+   	CONSTRAINT FK_CUSTOMER FOREIGN KEY(Customer_ID) REFERENCES Customers(Customer_ID),
+  	CONSTRAINT FK_CART FOREIGN KEY(Cart_ID) REFERENCES Cart(Cart_ID)
+);
+
+CREATE TABLE Credit_Cards(
+ 	Credit_Card_ID INT GENERATED ALWAYS AS IDENTITY,
+   	Customer_ID INT NOT NULL, 
+  	Credit_Card_Number VARCHAR(19) NOT NULL, 
+   	CCV VARCHAR(3) NOT NULL,
+ 	Name_on_Card VARCHAR(100),
+ 	Credit_Card_Type VARCHAR(30),
+ 	Expiration_Date VARCHAR(5),
+  	PRIMARY KEY (Credit_Card_ID),
+   	CONSTRAINT FK_CUSTOMER_ID FOREIGN KEY (Customer_ID) REFERENCES Customers(Customer_ID)
+);
+
+CREATE TABLE Cart(
+  	Cart_ID INT GENERATED ALWAYS AS IDENTITY,
+  	Product_ID INT NOT NULL,
+  	Customer_ID INT NOT NULL,
+  	Item_Count INT NOT NULL,
+  	PRIMARY KEY (Cart_ID),
+  	CONSTRAINT FK_PRODUCT_ID FOREIGN KEY(Product_ID) REFERENCES Products(Product_ID),
+ 	CONSTRAINT FK_CUSTOMER_ID FOREIGN KEY(Customer_ID) REFERENCES Customers(Customer_ID)
+);
+
+CREATE TABLE Payments(
+  	Payment_ID INT GENERATED ALWAYS AS IDENTITY,
+   	Product_ID INT NOT NULL, 
+  	Quantity INT NOT NULL, 
+   	Amount MONEY NOT NULL,
+ 	Payment_Date DATE NOT NULL,
+ 	Customer_ID INT NOT NULL,
+  	PRIMARY KEY (Payment_ID),
+   	CONSTRAINT FK_PRODUCT_ID FOREIGN KEY (Product_ID) REFERENCES Products(Product_ID)
+);
+
+CREATE TABLE Categories(
+	Category_ID INT GENERATED ALWAYS AS IDENTITY,
+ 	Category_Name VARCHAR(50) NOT NULL,
+ 	Description VARCHAR(100) NOT NULL,
+ 	PRIMARY KEY (Category_ID)
+);
